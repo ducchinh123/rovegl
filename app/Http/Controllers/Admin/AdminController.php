@@ -106,6 +106,8 @@ class AdminController extends Controller
 
     public function importSave(Request $request)
 {
+
+    // test thử xem sao
     if ($request->file('file_excel_2')) {
         $request->validate([
             'file_excel_2' => 'required|file|mimes:xls,xlsx,csv',
